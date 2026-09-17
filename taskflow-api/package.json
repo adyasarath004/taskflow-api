@@ -1,0 +1,27 @@
+{
+  "name": "taskflow-api",
+  "version": "1.0.0",
+  "description": "A Task Management REST API with JWT authentication, MySQL, Docker, and CI/CD.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage --forceExit",
+    "lint": "eslint src tests"
+  },
+  "keywords": ["nodejs", "express", "mysql", "jwt", "docker", "ci-cd"],
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
